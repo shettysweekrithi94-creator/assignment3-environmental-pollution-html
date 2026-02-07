@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Environmental Pollution Awareness</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 30px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #90ee90;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #ffffff;
+        }
+    </style>
+
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Environmental Pollution</h1>
+
+    <p>
+        Environmental pollution is one of the most serious global issues affecting human health,
+        wildlife, and climate. Pollution occurs due to harmful substances released into air, water,
+        and land, leading to long-term damage to ecosystems.
+    </p>
+
+    <p>
+        The images used on this page highlight major pollution sources and encourage people
+        to understand the impact and take responsibility for protecting the environment.
+    </p>
+
+    <h2>Main Pollution Sources (Image Map)</h2>
+
+   
+    <img src="pollution_map.png"
+     alt="Environmental Pollution Map of India"
+     usemap="#pollutionMap"
+     width="600">
+
+
+    <map name="pollutionMap">
+
+  
+  <area shape="rect"
+        coords="230,90,330,170"
+        onclick="alert('This region shows very high air pollution levels caused by vehicles and industries.')"
+        alt="Air Pollution">
+
+
+  <area shape="circle"
+        coords="300,260,45"
+        onclick="alert('This area shows moderate pollution levels affecting air and water quality.')"
+        alt="Moderate Pollution">
+
+
+  <area shape="poly"
+        coords="260,360,310,340,360,370,340,440,290,460,250,420"
+        onclick="alert('This region has comparatively lower pollution but still needs environmental protection.')"
+        alt="Lower Pollution">
+
+</map>
+
+
+    <h2>Responsive Image Using Picture Element</h2>
+
+    <picture>
+        <source media="(max-width: 600px)"
+                srcset="https://tse1.mm.bing.net/th/id/OIP.s6nHDhp_idCI1G5FWxX5sgHaE8?pid=Api&P=0&h=180">
+
+        <source media="(min-width: 601px)"
+                srcset="https://media.thegospelcoalition.org/wp-content/uploads/2021/02/24141205/pollution.jpg">
+
+        <img src="https://tse3.mm.bing.net/th/id/OIP._Gmw472fzdKuod40RkPvWgHaEo?pid=Api&P=0&h=180"
+             alt="Nature Protection">
+    </picture>
+
+  <div style="margin-top: 30px; padding: 15px; background-color: #f5f5f5; color: #000;">
+  <h2>Content Description</h2>
+
+  <p>
+    Environmental pollution is a major real-world problem that affects air, water, and land.
+    It is mainly caused by industrial emissions, vehicle smoke, plastic waste, and improper
+    disposal of garbage. High pollution levels lead to serious health issues and damage to
+    natural ecosystems.
+  </p>
+
+  <p>
+    The main image used on this page is a pollution map of India, which shows different pollution
+    levels across regions. The image map highlights areas with high, moderate, and lower pollution
+    using interactive regions.
+  </p>
+
+  <p>
+    The responsive images displayed using the <code>&lt;picture&gt;</code> element change based on
+    screen size to provide a better viewing experience on mobile and desktop devices. These images
+    help in visually explaining the impact of pollution and the importance of environmental
+    protection.
+  </p>
+</div>
+
+</div>
+
+</body>
+</html>
